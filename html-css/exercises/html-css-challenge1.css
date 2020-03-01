@@ -1,0 +1,117 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.headerMain, .headerSub {
+	background-color: lightgreen;
+	border-bottom: 2px solid gray;
+	overflow: auto;
+	padding: 10px 20px;
+	position: relative;
+}
+
+h1 {
+	display: inline-block;
+	width: 40%;
+}
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid gray;
+}
+
+p {
+	max-width: 600px;
+}
+
+section {
+	padding: 20px 20px 40px;
+}
+
+section a {
+	background-color: navy;
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.photo {
+	width: 40%;
+	max-width: 350px;
+	margin: 10px;
+	border: 2px solid white;
+}
+
+.link {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+@media only screen and (max-width: 40em) {
+	.headerMain {
+		 background-color: #222;
+		 border-bottom-color: gray;
+		 padding: 0 20px;
+	}
+
+	nav li {
+		border-color: darkblue;
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	.headerMain {
+		 background-color: crimson;
+		 border-bottom-color: orange;
+		 position: fixed;
+		 width: 100%;
+		 box-sizing: border-box;
+	}
+
+	main {
+		padding-top: 100px;
+	}
+
+	.headerMain h1 {
+		color: white;
+	}
+
+	nav li {
+		background-color: white;
+		border-radius: 15px;
+		border-color: white;
+	}
+
+	.headerSub {
+		background-color: darkorange;
+		color: white;
+	}
+
+}
+
+@media only screen and (min-width: 70em) {
+	.headerMain {
+		background-color: green;
+		border-bottom-color: darkgreen;
+	}
+
+	.headerSub {
+		background-color: turquoise;
+	}
+
+	.photo {
+		max-width: none;
+	}
+
+	section a {
+		background-color: slateblue;
+	}
+}

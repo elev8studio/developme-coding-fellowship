@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use IE Edge if available -->
+    <title>My Cool Site</title> <!-- Put title of page in here -->
+    <meta name="description" content=""> <!-- Description of page goes in content quotes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Make sure pixel == pixel on retina and zoom works on touch -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Website icons -->
+    <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- External files - this one is CSS -->
+</head>
+
+<body>
+    <header>
+        <h1>My Cool Site</h1>
+        <nav></nav>
+    </header>
+    <main>
+        <article>
+            <!-- Generally an article element is used for standalone content -->
+            <header>
+                <h2>Article Title</h2>
+            </header>
+            <p>
+                <b>This is some <code>&lt;b>&lt;/b></code> text.</b> <br /> <!-- This is some bold (b) text -->
+                <strong>This is some <code>&lt;strong>&lt;strong/></code> text.</strong> <br /> <!-- This is some bold (strong) text -->
+                <i>This is some <code>&lt;i>&lt;i/></code> text.</i> <br /> <!-- This is some italic (i) text -->
+                <em>This is some <code>&lt;em>&lt;em/></code> text.</em> <br /> <!-- This is some italic (em) text -->
+                <span>This is a <code>&lt;span>&lt;span/></code> element.</span> <br /> <!-- This is a span element -->
+                This is normal text. <sup>This is <code>&lt;sup>&lt;sup/></code> text.</sup> <br /> <!-- This is superscript text -->
+                This is normal text. <sub>This is <code>&lt;sub>&lt;sub/></code> text.</sub> <br /> <!-- This is subscript text -->
+                <time>This is a <code>&lt;time>&lt;time/></code> element.</time> <br /> <!-- This is a time element -->
+                <code>This is some <code>&lt;code>&lt;code/></code> text.</code> <!-- This is a code element that displays printed inline code. Make sure you remember to replace one of the side arrows with &lt; -->
+            </p>
+            <pre> <!-- This is how you insert printed code into HTML. Displays as a block. Make sure you remember to replace one of the side arrows with &lt; --> 
+				<code>&lt;body>&lt;/body></code> <!-- code tags are optional here -->
+			</pre>
+            <a href="https://www.google.co.uk">Read more...</a>
+            <blockquote cite="Jonathan">
+                <!-- Cite attribute hidden from the browser -->
+                <q>Nulla tempor lorem ut nisi iaculis, a sodales neque feugiat.</q>
+                <cite>Jonathan</cite> <!-- Cite element visible to the browser -->
+            </blockquote>
+            <details>
+                <summary>Nunc diam lacus, pretium maximus eros eget, facilisis ultrices sem.</summary> <!-- Details element must contain summary element -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mauris dui, venenatis a ornare quis, iaculis et felis. Donec vitae sem orci. Proin tincidunt eget elit eget feugiat. Nunc diam lacus, pretium maximus eros eget, facilisis ultrices sem. Aliquam feugiat condimentum facilisis. Donec eget maximus odio. Nulla tempor lorem ut nisi iaculis, a sodales neque feugiat.
+            </details>
+            <figure>
+                <img src="../exercises/images/small.jpg" alt="photo" />
+                <figcaption>This is a fig caption.</figcaption>
+            </figure>
+            <video controls autoplay>
+                <!-- NOTE: Spend more time looking into the various 'types' -->
+                <source src="" type="">
+                <source src="" type="">
+            </video>
+            <audio controls>
+                <source src="" type="">
+            </audio>
+            <picture>
+                <!-- Use the picture element when you want to load different images for different screen sizes. It's a way of loading multiple images but only displaying one depending on screen size. -->
+                <source srcset="../exercises/images/large.jpg" media="(min-width: 800px)" alt="Helena" />
+                <source srcset="../exercises/images/small.jpg" media="(max-width: 400px)" alt="Helena" />
+                <img src="../exercises/images/medium.jpg" alt="Helena" style="width: 50%" />
+            </picture>
+            <canvas></canvas> <!-- This element is used for digital animation. The only thing needed in html is the canvas tag, everything else is handled with Javascript. -->
+            <button>Close</button> <!-- NOT to be used as links, just in page behaviour, e.g. close modal, play video -->
+        </article>
+        <table>
+            <tr>
+                <th>Fruit</th>
+                <th>Colour</th>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Yellow</td>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>Red</td>
+            </tr>
+        </table>
+        <aside>
+            <!-- Generally used for related content, or a sidebar -->
+            <ul>
+                <li>Unordered list item 1</li>
+                <li>Unordered list item 2</li>
+                <li>Unordered list item 3</li>
+            </ul>
+            <ol>
+                <li>Ordered list item 1</li>
+                <li>Ordered list item 2</li>
+                <li>Ordered list item 3</li>
+            </ol>
+            <dl>
+                <!-- Dictionary List -->
+                <dt>Word</dt> <!-- Dictionary Term -->
+                <dd>Definition one</dd> <!-- Dictionary Definition -->
+                <dd>Definition two</dd>
+            </dl>
+        </aside>
+        <section>
+            <!-- Generally a section denotes a specific area of the page e.g. some text and images. Used for page layout -->
+        </section>
+    </main>
+    <footer></footer>
+    <script type="text/javascript" src="javascript/script.js"></script> <!-- Javascript is typically loaded as the final element before the body close tag. This ensures all JavaScript knows where all content is on the page and loads after all other content has loaded, speeding up page load speeds. Now, when writing advanced Javascript, it's now possible to load Javascript in the head setion, but your JavaScript has to be written a certain way for this to work. --> 
+</body>
+
+</html>

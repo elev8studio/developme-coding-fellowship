@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use IE Edge if available -->
+    <title>Another Website</title> <!-- Put title of page in here -->
+    <meta name="description" content=""> <!-- Description of page goes in content quotes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Make sure pixel == pixel on retina and zoom works on touch -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Website icons -->
+    <link rel="stylesheet" type="text/css" href="exercise-3.css"> <!-- External files - this one is CSS -->
+</head>
+
+<body class="home">
+    <div class="wrapper">
+        <header class="header">
+            <h1>Another Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/code">Code</a></li>
+                    <li><a href="/news">News</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <section>
+                <h4><b>Cool video</b></h4>
+                <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+                <button>Fullscreen</button>
+                
+                <h4><b>Picture, with caption</b></h4>
+                <figure>
+                    <picture>
+                        <source srcset="images/large.jpg" media="(min-width: 800px)" alt="Helena" />
+                        <img src="images/medium.jpg" alt="Helena" style="width: 50%" />
+                    </picture>
+                    <figcaption>Photo from www.helenacavan.com</figcaption>
+                </figure>
+            </section>
+            <article>
+                <header>
+                    <h2>Reusable Content</h2>
+                </header>
+                <section>
+                    <blockquote cite="Eleanor Roosevelt">
+                        <p><em><cite>Eleanor Roosevelt</cite> once said:</em></p>
+                        <q>You must do the things you think you cannot do.</q>
+                    </blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</strong></p>
+                    <p>Christmas is the <time>25<sup>th</sup> December</time></p>
+                </section>
+                <aside>
+                    <header>
+                        <h3>This content isn't main content</h3>
+                    </header>
+                    <ol>
+                        <li>First List item</li>
+                        <li class="second">This list item has a class of second</li>
+                        <li>Third li</li>
+                    </ol>
+                    <table>
+                        <tr>
+                            <th>Dessert</th>
+                            <th>Calories</th>
+                            <th>Fat</th>
+                            <th>Carbs</th>
+                        </tr>
+                        <tr>
+                            <td>Frozen yoghurt</td>
+                            <td>159</td>
+                            <td>6.0</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>Ice cream sandwich</td>
+                            <td>237</td>
+                            <td>9.0</td>
+                            <td>37</td>
+                        </tr>
+                        <tr>
+                            <td>Eclair</td>
+                            <td>262</td>
+                            <td>16.0</td>
+                            <td>24</td>
+                        </tr>
+                    </table>
+                </aside>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; Elev8 2019</p>
+        </footer>
+    </div>
+</body>
+
+</html>

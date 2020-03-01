@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Roll the dice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .dice1,
+            .dice2 {
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                margin-top: 30px;
+                border: 2px solid black;
+                border-radius: 10px;
+                background-size: contain;
+                background-position: center center;
+                transition: all 0.3s;
+            }
+
+            .dice2 {
+                transform: translateX(130px);
+            }
+        </style>
+        <script defer src="dice.js"></script>
+    </head>
+
+    <body class="container">
+        <div class="page-header">
+            <h1>Roll the dice!</h1>
+        </div>
+
+        <button type="button" id="roll" name="button" class="btn btn-primary">Roll the dice!</button>
+        <div id="dice1" class="dice1"></div>
+        <div id="dice2" class="dice2"></div>
+
+    </body>
+
+</html>

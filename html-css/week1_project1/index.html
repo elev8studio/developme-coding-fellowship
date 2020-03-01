@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use IE Edge if available -->
+    <title>My Portfolio</title> <!-- Page title -->
+    <meta name="description" content="Ruth John's Portfolio Website"> <!-- Page description -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Make sure pixel == pixel on retina and zoom works on touch -->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css"> <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css"> <!-- Main CSS -->
+</head>
+
+<body class="home">
+	<header class="header-top">
+		<div class="content">
+			<h1 class="page-title light-text">My Portfolio</h1>
+			<div class="nav-toggle">
+				<div class="nav-toggle-bar"></div>
+			</div>
+	        <nav class="nav">
+	            <ul>
+	                <li class="menu-item active"><a href="">Home</a></li>
+	                <li class="menu-item"><a href="">About</a></li>
+	                <li class="menu-item"><a href="">Work</a></li>
+	            </ul>
+	        </nav> 
+	    </div> <!-- /.content -->
+	</header> <!-- /.header-top green-background -->
+
+	<main>
+		<article>
+			<section class="about-short">
+				<div class="content">
+					<header>
+						<h2 class="section-title dark-text">About</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et <a href="">dolore magna aliqua</a>. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+					<p><strong>Duis aute irure dolor</strong> in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. <em>Excepteur sint occaecat cupidatat</em> non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p class="link-paragraph"><a href="">More...</a></p>
+				</div> <!-- /.content -->
+			</section> <!-- /.about-short -->
+
+			<section class="recent-short">
+				<div class="content">
+					<header>
+						<h2 class="section-title light-text">Recent Work</h2>
+					</header>
+					<section class="gallery">
+						<picture>
+							<source srcset="images/image1.webp">
+							<img class="gallery-single" src="images/image1.jpg" alt="recent work 1" />
+						</picture>
+						<picture>
+							<source srcset="images/image2.webp">
+							<img class="gallery-single" src="images/image2.jpg" alt="recent work 2" />
+						</picture>
+						<picture>
+							<source srcset="images/image3.webp">
+							<img class="gallery-single" src="images/image3.jpg" alt="recent work 3" />
+						</picture>
+						<picture>
+							<source srcset="images/image4.webp">
+							<img class="gallery-single gallery-single-last" src="images/image4.jpg" alt="recent work 4" />
+						</picture>
+						<picture>
+							<source srcset="images/image5.webp">
+							<img class="gallery-single" src="images/image5.jpg" alt="recent work 5" />
+						</picture>
+						<picture>
+							<source srcset="images/image6.webp">
+							<img class="gallery-single" src="images/image6.jpg" alt="recent work 6" />
+						</picture>
+						<picture>
+							<source srcset="images/image7.webp">
+							<img class="gallery-single" src="images/image7.jpg" alt="recent work 7" />
+						</picture>
+						<picture>
+							<source srcset="images/image8.webp">
+							<img class="gallery-single" src="images/image8.jpg" alt="recent work 8" />
+						</picture>
+					</section>
+					<a href="" class="gallery-link">See More ></a>
+				</div> <!-- /.content -->
+			</section> <!-- /.recent-short -->
+		</article>
+
+		<aside class="contact">
+			<section class="contact">
+				<div class="content">
+					<header>
+						<h2 class="section-title light-text">Get In Touch</h2>
+						<p class="light-text">You can <a href="mailto:john@johndoe.com">email me here</a>, or fill out the form below</p>
+					</header>
+
+					<form class="contact-form" action="" method="">
+						<div class="form-left">
+				        	<!-- <legend></legend> -->
+				            <label for="name">Name *</label> <!-- The 'for' attribute points to the id of the input element. -->
+				            <input type="text" name="name" id="name" min="1" required>
+				            <!-- The input name pairs the input data to a data type when submitting the name -->
+
+				            <!-- <legend></legend> -->
+				            <label for="email">Email *</label>
+				            <input type="email" name="email" id="email" required>
+				       </div>
+				       <div class="form-right">
+				            <label class="control-label" for="message">Message</label>
+				            <textarea name="message" id="message" min="1"></textarea>
+				       </div>
+				       <div class="form-bottom">
+				            <input type="submit" value="Send" id="submit">
+				       </div>
+					</form>
+				</div> <!-- /.content -->
+			</section> <!-- /.contact -->
+		</aside>
+	</main>
+
+	<footer>
+		<div class="content">
+			<p>Site designed by Ruth John &copy; 2017</p>
+		</div>
+	</footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

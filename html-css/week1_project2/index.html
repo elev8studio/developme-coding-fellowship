@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use IE Edge if available -->
+        <title>Coffee App</title> <!-- Page title -->
+        <meta name="description" content=""> <!-- Page description -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Make sure pixel == pixel on retina and zoom works on touch -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Website icons -->
+        <link rel="stylesheet" type="text/css" href="styles/reset.css"> <!-- Reset CSS -->
+        <link rel="stylesheet" type="text/css" href="styles/style.css"> <!-- Main CSS -->
+    </head>
+
+    <body class="home">
+        <header class="header-top">
+            <div class="nav-toggle">
+                <div class="nav-toggle-bar"></div>
+                <p>Menu</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="menu-item active"><a href="">Menu Item 1</a></li>
+                    <li class="menu-item"><a href="">Menu Item 2</a></li>
+                    <li class="menu-item"><a href="">Menu Item 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="items-summary">
+            <p class="items-total"><span id="items-count"></span> Items</p>
+            <button class="complete-count" onclick="getTotal()">Done</button>
+        </article>
+
+        <article class="coffee">
+            <header class="coffee-header type-header">
+                <button class="open-list">Coffee</button>
+            </header>
+            <section class="item-list">
+                <form id="coffee-form" method="POST" action="#">
+                    <div>
+                        <label>Espresso</label>
+                        <input type="text" name="quantity" value="0" class="espressoCount count" />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="espressoMinus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="espressoPlus()" />
+                    </div>
+                    <div>
+                        <label>Cappuccino</label>
+                        <input type="text" name="quantity" value="0" class="cappuccinoCount count" readonly />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="cappuccinoMinus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="cappuccinoPlus()" />
+                    </div>
+                    <div>
+                        <label>Latte</label>
+                        <input type="text" name="quantity" value="0" class="latteCount count" readonly />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="latteMinus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="lattePlus()" />
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <article class="sweet">
+            <header class="sweet-header type-header">
+                <button class="open-list">Sweet</button>
+            </header>
+            <section class="item-list">
+                <form id="sweet-form" method="POST" action="#">
+                    <div>
+                        <label>Brownie</label>
+                        <input type="text" name="quantity" value="0" class="brownieCount count" readonly />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="brownieMinus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="browniePlus()" />
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <article class="food">
+            <header class="food-header type-header">
+                <button class="open-list">Food</button>
+            </header>
+            <section class="item-list">
+                <form id="food-form" method="POST" action="#">
+                    <div>
+                        <label>Hamburger</label>
+                        <input type="text" name="quantity" value="0" class="count" readonly />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="minus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="plus()" />
+                    </div>
+                </form>
+            </section>
+        </article>
+
+        <article class="drink">
+            <header class="drink-header type-header">
+                <button class="open-list">Drink</button>
+            </header>
+            <section class="item-list">
+                <form id="drink-form" method="POST" action="#">
+                    <div>
+                        <label>Lemonade</label>
+                        <input type="text" name="quantity" value="0" class="count" readonly />
+                        <input type="button" value="-" class="qtyminus" field="quantity" onclick="minus()" />
+                        <input type="button" value="+" class="qtyplus" field="quantity" onclick="plus()" />
+                    </div>
+                </form>
+            </section>
+        </article>
+        <footer>
+
+        </footer>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+
+</html>

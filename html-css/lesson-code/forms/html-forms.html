@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- read https://www.innoq.com/de/blog/html-forms/-->
+    <section class="form-example">
+        <!-- where to go | GET or POST -->
+        <form action="" method="">
+            <fieldset>
+                <legend>Text Inputs</legend>
+                <label for="intext">Firstname</label>
+                <input type="text" name="firstname" id="intext" />
+                <label for="lasttext">Last name</label>
+                <input type="text" name="lastname" id="lasttext" />
+                <label for="lasttext">Password</label>
+                <input type="password" name="lastname" id="lasttext" />
+                <label for="lasttext">Number</label>
+                <input type="number" name="lastname" id="lasttext" />
+                <label for="lasttext">Tel</label>
+                <input type="tel" name="lastname" id="lasttext" />
+                <label for="lasttext">Email</label>
+                <input type="email" name="lastname" id="lasttext" />
+                <label for="lasttext">Url</label>
+                <input type="url" name="lastname" id="lasttext" />
+            </fieldset>
+            <fieldset>
+                <legend>Not written as input</legend>
+                <label for="dd">dropdown</label>
+                <select id="dd" name="cooloptions">
+                    <option>opt one</option>
+                    <option selected>opt two</option>
+                    <option>opt three</option>
+                </select>
+                <label for="mess">Message</label>
+                <textarea id="mess" name="ourmessage"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Other input types</legend>
+                <label for="incheck">Checkbox</label>
+                <input type="checkbox" name="checkin" id="incheck" />
+                <div>
+                    <label for="inradio">Radio</label>
+                    <input type="radio" name="radioin" value="optone" id="inradio" /><span>Option one</span>
+                    <input type="radio" name="radioin" value="optwo" /><span>Option Two</span>
+                </div>
+                <label for="indate">Date:</label>
+                <input type="date" name="datein" id="indate" />
+                <label for="indatetime">Datetime:</label>
+                <input type="datetime-local" name="datetimein" id="indatetime" />
+                <label for="intime">Time:</label>
+                <input type="time" name="timein" id="intime" />
+                <label for="inmonth">Month:</label>
+                <input type="month" name="monthin" id="inmonth" />
+                <label for="inweek">Week:</label>
+                <input type="week" name="weekin" id="inweek" value="41" />
+                <label for="infile">File</label>
+                <input type="file" name="filein" id="infile" />
+                <label for="insearch">Search</label>
+                <input type="search" name="searchin" id="insearch" />
+                <input type="hidden" name="hiddenin" id="inhidden" value="867" />
+            </fieldset>
+            <fieldset>
+                <legend>Lesser used</legend>
+                <label for="inrange">Range</label>
+                <input type="range" name="rangein" id="inrange" min="0" max="10" value="5" step="0.1" />
+                <label for="incolor">Colour</label>
+                <input type="color" name="colorin" id="incolor" />
+                <input type="button" name="" />
+                <input type="reset" name="" />
+            </fieldset>
+            <input type="submit" value="post form" />
+            <button type="submit">post form</button>
+        </form>
+    </section>
+</body>
+
+</html>
